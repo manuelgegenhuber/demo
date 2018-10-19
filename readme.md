@@ -1,6 +1,3 @@
-this is a readme
+## GIT - Commands
 
-
-## Heading 2
-
-###let's commit some changes.
+### Basics
