@@ -293,8 +293,21 @@ Manual
 <br>
 <br>
 
-<pre></pre>
+<pre>cat <file></pre>
+If you have a conflict
+<code>Auto merging CONFLICT</code>
 
+shows difference of the HEAD commit 
+and last commit on current branch.
+<br>
+<br>
 
+<pre>git mergetool</pre>
+If you have a conflict
+<code>Auto merging CONFLICT</code>
+
+shows differences (conflicts)
+via the specified git.difftool (i.e. P4Merge)
+cmd + q -> to quit P4Merge and return to the terminal.
 <br>
 <br>
