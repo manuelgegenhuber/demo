@@ -1,1 +1,3 @@
 some text
+
+master line
