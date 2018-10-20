@@ -4,11 +4,38 @@
 ## Configuration ##
 ###################
 
+### git config --global user.name "Your Name"
+Sets the username in git
+
+### git config --global user.email "your.email@your-place.com"
+Sets the users email in git
+
+### git config core.editor "mate -w"
+Sets textmate as default git editor
+
+### git config core.editor "code -w"
+sets vscode as default git editor. (add code in shell - https://code.visualstudio.com/docs/setup/mac)
+
+### git config --global -e
+Opens global git config file in specified editor.
+
 ### git init
 Create an empty Git repository or reinitialize an existing one.
 
 ### git config --global --list
 Lists all global configurations
+
+### git config --global diff.tool p4merge
+### git config --global difftool.p4merge.path "/Applications/p4merge.app/Contents/MacOS/p4merge"
+### git config --global difftool.prompt false
+Configure P4Merge as Diff tool
+(Download: https://www.perforce.com/products/helix-core-apps/merge-diff-tool-p4merge)
+
+### git config --global merge.tool p4merge
+### git config --global mergetool.p4merge.path "/Applications/p4merge.app/Contents/MacOS/p4merge"
+### git config --global mergetool.prompt false
+Configure P4Merge as Merge tool
+(Download: https://www.perforce.com/products/helix-core-apps/merge-diff-tool-p4merge)
 
 
 ##############
@@ -50,6 +77,12 @@ if changes are in the working area -> gets the last version in the repo (gets "o
 
 ### git checkout .
 gets the last version in the repo of all files in the working area (removes changes)
+
+### exclude files from git
+Create .gitignore file. (mate .gitignore)
+Each line represents 1 expression (<filename>)
+(i.e. *.log -> excludes all files that end with '.log')
+
 
 ###################################
 ##  Clean changes outside of git ##
