@@ -34,4 +34,10 @@ commits a file from the working area directly to the repo.
 ### git mv <old_filename> <new_filename>
 renames a file and also keeps track about it. (need commit afterwards)
 
+### git checkout <file>
+if changes are in the working area -> gets the last version in the repo (gets "original")
+
+### git checkout .
+gets the last version in the repo of all files in the working area (removes changes)
+
 -------------------------------------------------------------------------------
