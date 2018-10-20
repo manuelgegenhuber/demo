@@ -52,7 +52,7 @@ takes file from working area and places it on stagin area.
 Adds all files from the working area to the staging area.
 
 ## git rm --cached <file>
-Removes file from repo and staging and sets it as untracked.
+Removes file from repo and staging and sets it as untracked. (need commit afterwards)
 
 ### git reset HEAD <file>
 Removes file from staging area and puts it to the working area.
