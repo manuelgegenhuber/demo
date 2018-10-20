@@ -65,6 +65,14 @@ Configure P4Merge as Merge tool
 <br>
 <br>
 
+<pre>HEAD</pre>
+Like "pointers"
+Points to last Commit of current Branch
+Can be Moved (Advanced)
+
+<br>
+<br>
+
 -------------------------------------------------------------------------------
 
 <h1>Basics</h1>
@@ -220,8 +228,67 @@ HEAD -> last commit
 <br>
 <br>
 
-<pre></pre>
+<pre>git diff <branch name> master</pre>
+Compares last commits on the specified branches.
 
+<br>
+<br>
+
+<pre>git difftool <branch name> master</pre>
+Compares last commits on the specified branches.
+via the specified git.difftool (i.e. P4Merge)
+cmd + q -> to quit P4Merge and return to the terminal.
+
+<br>
+<br>
+
+<pre>git branch</pre>
+Listd all branches
+* -> you're currently on that branch.
+
+<br>
+<br>
+
+<pre>git checkout <branch name></pre>
+To switch to a specified branch.
+
+<br>
+<br>
+
+<pre>git checkout -b <branch name></pre>
+To create a new branch $
+switch to that specified branch.
+
+<br>
+<br>
+
+<pre>git merge <branch name> </pre>
+Merges the commits into the current branch.
+switch to master (recommended):
+<br>
+<code>git checkout master</code>
+<br>
+
+Fast-Forward
+<ul>
+<li>Simplest Case</li>
+<li>Like Never Branched (Commits on Destination)</li>
+<li>Can Be Disabled</li>
+</ul>
+Automatic
+<ul>
+<li>Non-Conflicting Merge Detected</li>
+<li>Preserves both Timelines</li>
+<li>Merge Commit on Destination</li>
+<li>New Merge Commit is created</li>
+</ul>
+Manual
+<ul>
+<li>Automatic Merge Not Possible</li>
+<li>Conflicting Merge State</li>
+<li>Changes Saved in Merge Commit</li>
+<li>New Merge Commit is created</li>
+</ul>
 
 <br>
 <br>
