@@ -1,8 +1,19 @@
 # Git Commands
 
-###############
-##Basics##
-###############
+###################
+## Configuration ##
+###################
+
+### git init
+Create an empty Git repository or reinitialize an existing one.
+
+### git config --global --list
+Lists all global configurations
+
+
+##############
+##  Basics  ##
+##############  
 
 ###	git status 
 shows status of current work & staging area. And also untracked files.
@@ -53,6 +64,12 @@ Updates these changes to the staging area.
 All file modification get to the staging area.
 (i.e. if you changed the name of a file, and the new name is marked as untracked file.)
 
+##############
+##  Alias   ##
+##############
 
+### git config --global alias.<alias name> "<alias command>"
+add an alias to git (can be found in git config --global --list)
+(i.e. git config --global alias.history "log --oneline --graph --decorate --all")
 
 -------------------------------------------------------------------------------
