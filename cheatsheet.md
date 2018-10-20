@@ -40,4 +40,19 @@ if changes are in the working area -> gets the last version in the repo (gets "o
 ### git checkout .
 gets the last version in the repo of all files in the working area (removes changes)
 
+###################################
+##  Clean changes outside of git ##
+###################################
+
+### git add -u
+if you renamed a file without git mv (recommended).
+Updates these changes to the staging area.
+(needs commit afterwards)
+
+### git add -A
+All file modification get to the staging area.
+(i.e. if you changed the name of a file, and the new name is marked as untracked file.)
+
+
+
 -------------------------------------------------------------------------------
