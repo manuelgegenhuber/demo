@@ -214,6 +214,11 @@ Creates tag.
 <br>
 <br>
 
+<pre>git tag -d <tag name></pre>
+Deletes specified tag
+<br>
+<br>
+
 <pre>git tag --list</pre>
 Shows tags
 <br>
