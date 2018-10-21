@@ -417,3 +417,33 @@ Clears working and staging area.
 
 <br>
 <br>
+
+-------------------------------------------------------------------------------
+
+<h1>Github</h1>
+
+<pre>git remote add origin <Repo url></pre>
+handles the remote connection with the Repo in Github.
+
+<br>
+<br>
+
+<pre>git remote -v</pre>
+Lists Urls for Remote Connection.
+Can be 2 different urls.
+Most of the time it's the same url.
+
+<br>
+<br>
+
+<pre>git push -u origin master</pre>
+Pushes local repo to the Github repo.
+-u -> username (requires loging)
+
+<br>
+<br>
+
+<pre>git push -u origin master --tags</pre>
+Pushes local repo to the Github repo.
+-u -> username (requires loging)
+--tags -> pushes it with the tags
