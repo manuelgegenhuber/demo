@@ -361,15 +361,20 @@ If you have a conflict
 <code>Auto merging CONFLICT</code>
 
 shows differences (conflicts)
+
 via the specified git.difftool (i.e. P4Merge)
+
 cmd + q -> to quit P4Merge and return to the terminal.
 <br>
 <br>
 
 <pre>git stash</pre>
 Saves current working directory.
+
 And puts it aside.
+
 (Your working directory changes are "gone")
+
 After that you can change and commit something different.
 And get that saved stash back later with: <code>git stash pop</code>
 
@@ -390,6 +395,7 @@ loads last stash.
 
 <pre>git reset #<commit number> --soft</pre>
 Resets current HEAD commit to specified commit.
+
 -> working and staging area don't get cleaned.
 
 <br>
@@ -397,6 +403,7 @@ Resets current HEAD commit to specified commit.
 
 <pre>git reset #<commit number> --soft</pre>
 Resets current HEAD commit to specified commit.
+
 -> working and staging area don't get cleaned.
 
 <br>
@@ -438,8 +445,11 @@ Most of the time it's the same url.
 
 <pre>git push -u origin master</pre>
 Pushes local repo to the Github repo.
+
 origin -> Github repository
+
 master -> branch
+
 -u -> username (requires login - only when creating the repo)
 
 <br>
@@ -447,16 +457,56 @@ master -> branch
 
 <pre>git push -u origin master --tags</pre>
 Pushes local repo to the Github repo.
+
 -u -> username (requires login - only when creating the repo)
+
 origin -> Github repository
+
 master -> branch
+
 --tags -> pushes it with the tags
 
 <br>
 <br>
 
-<code>SSH Authentication</code>
+<h1>SSH Authentication</h1>
 
+<h2>Generate SSH-Key (mac)</h2>
 
+<pre>cd ~/</pre>
+Change directory to:
+<code>"/Users/username"</code>
+<pre>mkdir .ssh</pre>
+Create <code>.ssh</code> directory.
+That folder contains our ssh related files.
+<pre>cd .ssh</pre>
+Go into the .ssh folder.
+<pre>ssh-keygen -t rsa-C "email-adress"</pre>
+ssh-keygen -> tool to generate private and public key
+
+-t -> type
+
+rsa -> specified type (https://de.wikipedia.org/wiki/RSA-Kryptosystem)
+
+-C -> Common-Name
+
+<code>(passphrase recommended)</code>
+
+<pre>ls -al</pre>
+To list all files -> open <code>id_rsa.pub</code> and copy all of it.
+
+<br>
+<br>
+
+<h2>Setting up SSH-Key on Github</h2>
+
+On Github -> profile -> settings -> SSH and GPG keys -> "new SSH key".
+
+Fill out title & paste the key.
+
+<pre>ssh -T git@github.com</pre>
+Authenticate
+
+(passphrases needed)
 <br>
 <br>
