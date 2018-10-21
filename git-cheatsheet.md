@@ -65,7 +65,8 @@ Configure P4Merge as Merge tool
 <br>
 <br>
 
-<pre>HEAD</pre>
+<code>HEAD</code>
+
 Like "pointers"
 Points to last Commit of current Branch
 Can be Moved (Advanced)
@@ -309,7 +310,8 @@ switch to that specified branch.
 
 <pre>git merge <branch name> </pre>
 Merges the commits into the current branch.
-switch to master (recommended):
+
+Switch to master (to merge with master):
 <br>
 <code>git checkout master</code>
 <br>
@@ -354,5 +356,27 @@ If you have a conflict
 shows differences (conflicts)
 via the specified git.difftool (i.e. P4Merge)
 cmd + q -> to quit P4Merge and return to the terminal.
+<br>
+<br>
+
+<pre>git stash</pre>
+Saves current working directory.
+And puts it aside.
+(Your working directory changes are "gone")
+After that you can change and commit something different.
+And get that saved stash back later with: <code>git stash pop</code>
+
+<br>
+<br>
+
+<pre>git stash list</pre>
+Lists saved stashes.
+
+<br>
+<br>
+
+<pre>git stash pop</pre>
+loads last stash.
+
 <br>
 <br>
