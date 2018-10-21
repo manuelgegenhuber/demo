@@ -451,3 +451,12 @@ Pushes local repo to the Github repo.
 origin -> Github repository
 master -> branch
 --tags -> pushes it with the tags
+
+<br>
+<br>
+
+<code>SSH Authentication</code>
+
+
+<br>
+<br>
