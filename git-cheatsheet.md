@@ -77,8 +77,21 @@ Can be Moved (Advanced)
 
 <h1>Basics</h1>
 
-<pre>git status </pre>
+<pre>git status</pre>
 shows status of current work & staging area. And also untracked files.
+
+<br>
+<br>
+
+<pre>git log</pre>
+shows (all) commits.
+
+<br>
+<br>
+
+<pre>git show</pre>
+shows last (HEAD) commit.
+(with more detailed information)
 
 <br>
 <br>
@@ -196,7 +209,7 @@ add an alias to git (can be found in git config --global --list)
 <h1>Advanced</h1>
 
 <pre>git tag <tag name></pre>
-Default -> current commit (HEAD)
+Default -> last commit (HEAD)
 Creates tag.
 <br>
 <br>
