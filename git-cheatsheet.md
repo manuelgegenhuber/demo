@@ -438,12 +438,16 @@ Most of the time it's the same url.
 
 <pre>git push -u origin master</pre>
 Pushes local repo to the Github repo.
--u -> username (requires loging)
+origin -> Github repository
+master -> branch
+-u -> username (requires login - only when creating the repo)
 
 <br>
 <br>
 
 <pre>git push -u origin master --tags</pre>
 Pushes local repo to the Github repo.
--u -> username (requires loging)
+-u -> username (requires login - only when creating the repo)
+origin -> Github repository
+master -> branch
 --tags -> pushes it with the tags
