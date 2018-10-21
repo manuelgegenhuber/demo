@@ -235,8 +235,8 @@ Creates annotated tag.
 <br>
 
 <pre>git show <annotated tag name></pre>
-Creates annotated tag.
-
+Shows commit with annotated tag.
+(Milestones)
 
 <br>
 <br>
