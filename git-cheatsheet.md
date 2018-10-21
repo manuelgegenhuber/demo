@@ -90,6 +90,13 @@ shows (all) commits.
 <br>
 <br>
 
+<pre>git reflog</pre>
+Logs everything that happened on that repository.
+(i.e. Branch switches and resets)
+
+<br>
+<br>
+
 <pre>git show</pre>
 shows last (HEAD) commit.
 (with more detailed information i.e. differences)
