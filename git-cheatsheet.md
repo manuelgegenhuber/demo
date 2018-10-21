@@ -199,7 +199,7 @@ All file modification get to the staging area.
 
 <pre>git config --global alias.<alias name> "<alias command>"</pre>
 add an alias to git (can be found in git config --global --list)
-(i.e. git config --global alias.history "log --oneline --graph --decorate --all")
+(i.e. git config --global alias.history "log --oneline --graph --decorate --all" -> like log but more compact)
 
 <br>
 <br>
@@ -211,16 +211,33 @@ add an alias to git (can be found in git config --global --list)
 <pre>git tag <tag name></pre>
 Default -> last commit (HEAD)
 Creates tag.
+
 <br>
 <br>
 
 <pre>git tag -d <tag name></pre>
 Deletes specified tag
+
 <br>
 <br>
 
 <pre>git tag --list</pre>
 Shows tags
+
+<br>
+<br>
+
+<pre>git tag -a <tag name> -m "<tag msg>"</pre>
+Creates annotated tag.
+
+
+<br>
+<br>
+
+<pre>git show <annotated tag name></pre>
+Creates annotated tag.
+
+
 <br>
 <br>
 
