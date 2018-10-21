@@ -91,7 +91,7 @@ shows (all) commits.
 
 <pre>git show</pre>
 shows last (HEAD) commit.
-(with more detailed information)
+(with more detailed information i.e. differences)
 
 <br>
 <br>
