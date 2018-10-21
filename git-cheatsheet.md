@@ -250,7 +250,7 @@ Shows commit with annotated tag.
 <br>
 
 <pre>git diff #<commit number> HEAD</pre>
-Compares the HEAD commit with the specified (commit mnumber) commit.
+Compares the HEAD commit with the specified (commit number) commit.
 HEAD -> last commit
 
 <br>
