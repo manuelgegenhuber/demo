@@ -380,3 +380,33 @@ loads last stash.
 
 <br>
 <br>
+
+<pre>git reset #<commit number> --soft</pre>
+Resets current HEAD commit to specified commit.
+-> working and staging area don't get cleaned.
+
+<br>
+<br>
+
+<pre>git reset #<commit number> --soft</pre>
+Resets current HEAD commit to specified commit.
+-> working and staging area don't get cleaned.
+
+<br>
+<br>
+
+<pre>git reset #<commit number> --mixed</pre>
+--mixed => default
+Sets HEAD commit to sppecified commit.
+Unstages all changes since that specified commit. (clears staging area)
+
+<br>
+<br>
+
+<pre>git reset #<commit number> --hard</pre>
+Sets HEAD commit to sppecified commit.
+Clears working and staging area.
+(Most destructive reset)
+
+<br>
+<br>
