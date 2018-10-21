@@ -193,8 +193,18 @@ add an alias to git (can be found in git config --global --list)
 
 -------------------------------------------------------------------------------
 
-
 <h1>Advanced</h1>
+
+<pre>git tag <tag name></pre>
+Default -> current commit (HEAD)
+Creates tag.
+<br>
+<br>
+
+<pre>git tag --list</pre>
+Shows tags
+<br>
+<br>
 
 <pre>git diff #<commit number> HEAD</pre>
 Compares the HEAD commit with the specified (commit mnumber) commit.
