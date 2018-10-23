@@ -297,7 +297,15 @@ cmd + q -> to quit P4Merge and return to the terminal.
 
 <pre>git branch</pre>
 Listd all branches
-* -> you're currently on that branch.
+asterix -> you're currently on that branch.
+
+<br>
+<br>
+
+<pre>git branch -a</pre>
+Listd all branches
+asterix -> you're currently on that branch.
+-a -> also shows remote branches from github
 
 <br>
 <br>
@@ -522,8 +530,16 @@ Is a
 
 <pre>git fetch</pre>
 updates local information based on what's changed on Github.
-
 (non-destructive)
+
+<br>
+<br>
+
+<pre>git fetch -p</pre>
+updates local information based on what's changed on Github.
+(non-destructive)
+-p -> (prune option) It's going to look for any dead branches and remove those
+references.
 
 <br>
 <br>
