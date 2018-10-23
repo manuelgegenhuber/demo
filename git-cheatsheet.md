@@ -491,7 +491,7 @@ the same name. (all)
 <br>
 
 <pre>git config --global push.default simple</pre>
-To set git push to the new behavior.
+To set git push to the new behavior (old matching).
 Only pushes the current branch to the corresponding
 remote branch that <code>git pull</code>
 uses to update the current branch.
