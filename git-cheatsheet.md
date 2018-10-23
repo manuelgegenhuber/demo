@@ -463,7 +463,7 @@ origin -> Github repository
 
 master -> branch
 
--u -> username (requires login - only when creating the repo)
+-u -> sets up tracking relationship
 
 <br>
 <br>
@@ -471,7 +471,7 @@ master -> branch
 <pre>git push -u origin master --tags</pre>
 Pushes local repo to the Github repo.
 
--u -> username (requires login - only when creating the repo)
+-u -> sets up tracking relationship
 
 origin -> Github repository
 
