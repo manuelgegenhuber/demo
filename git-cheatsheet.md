@@ -309,7 +309,7 @@ To switch to a specified branch.
 <br>
 
 <pre>git checkout -b <branch name></pre>
-To create a new branch $
+To create a new branch &
 switch to that specified branch.
 
 <br>
