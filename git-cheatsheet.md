@@ -425,6 +425,13 @@ Clears working and staging area.
 <br>
 <br>
 
+<pre>git remote set url origin<repository url></pre>
+To change the Remote-Url.
+(i.e. The Name of the Repo changed on Github)
+
+<br>
+<br>
+
 -------------------------------------------------------------------------------
 
 <h1>Github (Bitbucket, Gitlab etc)</h1>
