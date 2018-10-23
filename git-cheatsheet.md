@@ -427,7 +427,7 @@ Clears working and staging area.
 
 -------------------------------------------------------------------------------
 
-<h1>Github</h1>
+<h1>Github (Bitbucket, Gitlab etc)</h1>
 
 <pre>git remote add origin <Repo url></pre>
 handles the remote connection with the Repo in Github.
@@ -473,6 +473,28 @@ master -> branch
 Copy's a git repository to your local machine.
 (i.e. You created a Repo on Github)
 
+<br>
+<br>
+
+<pre>git push</pre>
+Pushes master (since Git v2.* only master)
+to the repository. Even if you have other branches. Before 2.* it sent everything.
+
+<br>
+<br>
+
+<pre>git config --global push.default matching</pre>
+To set git push to the old behavior.
+Git will push local branches to the remote branches that already exist with
+the same name. (all)
+<br>
+<br>
+
+<pre>git config --global push.default simple</pre>
+To set git push to the new behavior.
+Only pushes the current branch to the corresponding
+remote branch that <code>git pull</code>
+uses to update the current branch.
 <br>
 <br>
 
