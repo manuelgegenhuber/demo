@@ -498,6 +498,23 @@ uses to update the current branch.
 <br>
 <br>
 
+<pre>git pull</pre>
+Gets the changes from remote repository into the current branch.
+Is a
+<code>git fetch + git merge FETCH HEAD</code>
+(can be destructive)
+
+<br>
+<br>
+
+<pre>git fetch</pre>
+updates local information based on what's changed on Github.
+
+(non-destructive)
+
+<br>
+<br>
+
 <h1>SSH Authentication</h1>
 
 <h2>Generate SSH-Key (mac)</h2>
