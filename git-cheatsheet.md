@@ -425,13 +425,6 @@ Clears working and staging area.
 <br>
 <br>
 
-<pre>git remote set url origin<repository url></pre>
-To change the Remote-Url.
-(i.e. The Name of the Repo changed on Github)
-
-<br>
-<br>
-
 -------------------------------------------------------------------------------
 
 <h1>Github (Bitbucket, Gitlab etc)</h1>
@@ -446,6 +439,19 @@ handles the remote connection with the Repo in Github.
 Lists Urls for Remote Connection.
 Can be 2 different urls.
 Most of the time it's the same url.
+
+<br>
+<br>
+
+<pre>git remote show origin</pre>
+More detailed than <code>git remote -v</code>.
+
+<br>
+<br>
+
+<pre>git remote set-url origin<repository url></pre>
+To change the Remote-Url.
+(i.e. The Name of the Repo changed on Github)
 
 <br>
 <br>
