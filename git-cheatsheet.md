@@ -553,7 +553,7 @@ updates local information based on what's changed on Github.
 updates local information based on what's changed on Github.
 (non-destructive)
 -p -> (prune option) It's going to look for any dead branches and remove those
-references.
+references locally.
 
 <br>
 <br>
