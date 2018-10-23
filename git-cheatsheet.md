@@ -464,6 +464,13 @@ To change the Remote-Url.
 <br>
 <br>
 
+<pre>git push</pre>
+Pushes master (since Git v2.* only master)
+to the repository. Even if you have other branches. Before 2.* it sent everything.
+
+<br>
+<br>
+
 <pre>git push -u origin master</pre>
 Pushes local repo to the Github repo.
 
@@ -490,16 +497,15 @@ master -> branch
 <br>
 <br>
 
+<pre>git push origin:<branch name></pre>
+If you deleted a branch locally -> updates Github.
+Start with the branch-name right after the semicolon. (No space)
+<br>
+<br>
+
 <pre>git clone <git url> <folder name (optional)></pre>
 Copy's a git repository to your local machine.
 (i.e. You created a Repo on Github)
-
-<br>
-<br>
-
-<pre>git push</pre>
-Pushes master (since Git v2.* only master)
-to the repository. Even if you have other branches. Before 2.* it sent everything.
 
 <br>
 <br>
@@ -522,6 +528,14 @@ uses to update the current branch.
 <pre>git pull</pre>
 Gets the changes from remote repository into the current branch.
 Is a
+<code>git fetch + git merge FETCH HEAD</code>
+(can be destructive)
+
+<br>
+<br>
+
+<pre>git pull --all</pre>
+Updates all branches from remote repository.
 <code>git fetch + git merge FETCH HEAD</code>
 (can be destructive)
 
