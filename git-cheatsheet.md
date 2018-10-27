@@ -297,7 +297,15 @@ cmd + q -> to quit P4Merge and return to the terminal.
 
 <pre>git branch</pre>
 Listd all branches
-* -> you're currently on that branch.
+asterix -> you're currently on that branch.
+
+<br>
+<br>
+
+<pre>git branch -a</pre>
+Listd all branches
+asterix -> you're currently on that branch.
+-a -> also shows remote branches from github
 
 <br>
 <br>
@@ -309,7 +317,7 @@ To switch to a specified branch.
 <br>
 
 <pre>git checkout -b <branch name></pre>
-To create a new branch $
+To create a new branch &
 switch to that specified branch.
 
 <br>
@@ -419,7 +427,7 @@ Clears working and staging area.
 
 -------------------------------------------------------------------------------
 
-<h1>Github</h1>
+<h1>Github (Bitbucket, Gitlab etc)</h1>
 
 <pre>git remote add origin <Repo url></pre>
 handles the remote connection with the Repo in Github.
@@ -435,6 +443,26 @@ Most of the time it's the same url.
 <br>
 <br>
 
+<pre>git remote show origin</pre>
+More detailed than <code>git remote -v</code>.
+
+<br>
+<br>
+
+<pre>git remote set-url origin<repository url></pre>
+To change the Remote-Url.
+(i.e. The Name of the Repo changed on Github)
+
+<br>
+<br>
+
+<pre>git push</pre>
+Pushes master (since Git v2.* only master)
+to the repository. Even if you have other branches. Before 2.* it sent everything.
+
+<br>
+<br>
+
 <pre>git push -u origin master</pre>
 Pushes local repo to the Github repo.
 
@@ -442,7 +470,7 @@ origin -> Github repository
 
 master -> branch
 
--u -> username (requires login - only when creating the repo)
+-u -> sets up tracking relationship
 
 <br>
 <br>
@@ -450,13 +478,23 @@ master -> branch
 <pre>git push -u origin master --tags</pre>
 Pushes local repo to the Github repo.
 
--u -> username (requires login - only when creating the repo)
+-u -> sets up tracking relationship
 
 origin -> Github repository
 
 master -> branch
 
 --tags -> pushes it with the tags
+
+<br>
+<br>
+
+<pre>git push origin:<branch name></pre>
+If you deleted a branch locally -> updates Github.
+Start with the branch-name right after the semicolon. (No space)
+<pre>git push origin:<branch name></pre>
+If you deleted a branch locally -> updates Github.
+Start with the branch-name right after the semicolon. (No space)
 
 <br>
 <br>
@@ -470,6 +508,54 @@ Stores passphrase permanentls to Keychain.
 <pre>git clone <git url> <folder name (optional)></pre>
 Copy's a git repository to your local machine.
 (i.e. You created a Repo on Github)
+
+<br>
+<br>
+
+<pre>git config --global push.default matching</pre>
+To set git push to the old behavior.
+Git will push local branches to the remote branches that already exist with
+the same name. (all)
+<br>
+<br>
+
+<pre>git config --global push.default simple</pre>
+To set git push to the new behavior (old matching).
+Only pushes the current branch to the corresponding
+remote branch that <code>git pull</code>
+uses to update the current branch.
+<br>
+<br>
+
+<pre>git pull</pre>
+Gets the changes from remote repository into the current branch.
+Is a
+<code>git fetch + git merge FETCH HEAD</code>
+(can be destructive)
+
+<br>
+<br>
+
+<pre>git pull --all</pre>
+Updates all branches from remote repository.
+<code>git fetch + git merge FETCH HEAD</code>
+(can be destructive)
+
+<br>
+<br>
+
+<pre>git fetch</pre>
+updates local information based on what's changed on Github.
+(non-destructive)
+
+<br>
+<br>
+
+<pre>git fetch -p</pre>
+updates local information based on what's changed on Github.
+(non-destructive)
+-p -> (prune option) It's going to look for any dead branches and remove those
+references locally.
 
 <br>
 <br>
@@ -515,3 +601,4 @@ Authenticate
 (passphrases needed)
 <br>
 <br>
+
