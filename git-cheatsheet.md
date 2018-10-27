@@ -496,12 +496,6 @@ Start with the branch-name right after the semicolon. (No space)
 <br>
 <br>
 
-<pre>ssh-add -K</pre>
-Stores passphrase permanentls to Keychain.
-
-<br>
-<br>
-
 <pre>git clone <git url> <folder name (optional)></pre>
 Copy's a git repository to your local machine.
 (i.e. You created a Repo on Github)
@@ -596,6 +590,12 @@ Fill out title & paste the key.
 Authenticate
 
 (passphrases needed)
+<br>
+<br>
+
+<pre>ssh-add -K</pre>
+Stores passphrase permanentls to Keychain.
+
 <br>
 <br>
 
