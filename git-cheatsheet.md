@@ -401,14 +401,6 @@ Resets current HEAD commit to specified commit.
 <br>
 <br>
 
-<pre>git reset #<commit number> --soft</pre>
-Resets current HEAD commit to specified commit.
-
--> working and staging area don't get cleaned.
-
-<br>
-<br>
-
 <pre>git reset #<commit number> --mixed</pre>
 --mixed => default
 Sets HEAD commit to sppecified commit.
