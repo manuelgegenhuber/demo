@@ -492,9 +492,6 @@ master -> branch
 <pre>git push origin:<branch name></pre>
 If you deleted a branch locally -> updates Github.
 Start with the branch-name right after the semicolon. (No space)
-<pre>git push origin:<branch name></pre>
-If you deleted a branch locally -> updates Github.
-Start with the branch-name right after the semicolon. (No space)
 
 <br>
 <br>
